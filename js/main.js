@@ -23,4 +23,11 @@ $(document).ready(function() {
     $('.close-button').click(function(){
         payModal.fadeOut()
     })
+
+    $('.search-trig').click(function(){
+        $('.main-search-form').toggleClass('move-form')
+    })
+    $('.hide-form').click(function(){
+        $('.main-search-form').toggleClass('move-form')
+    })
 });

@@ -19,21 +19,12 @@
     <!-- Start Site NavBar -->
     <nav class="navbar navbar-expand-lg navbar-light">
       <a class="navbar-brand" href="#">LOGO</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="navbar-collapse" id="navbarSupportedContent">
         <!-- Nav Search Form  -->
-        <form class="form-inline my-2 my-lg-0">
+        <form class="form-inline my-2 my-lg-0 main-search-form">
+          <span class="hide-form d-lg-none">
+            <i class="fas fa-arrow-left"></i>
+          </span>
           <input
             class="form-control mr-sm-2"
             type="search"
@@ -61,6 +52,24 @@
         </form>
         <!-- Nav Actions Buttons -->
         <div class="nav-actions d-flex align-items-center">
+          <div class="search-trig d-lg-none">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-search"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#c32727"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <circle cx="10" cy="10" r="7" />
+              <line x1="21" y1="21" x2="15" y2="15" />
+            </svg>
+          </div>
           <div
             class="fav-list"
             data-toggle="modal"
@@ -86,7 +95,7 @@
             <!-- FavList Modal  -->
             <!--Modal: modalRelatedContent-->
             <div
-              class="modal fade right"
+              class="modal fade left"
               id="modalRelatedContent"
               tabindex="-1"
               role="dialog"
@@ -109,8 +118,10 @@
                 <div class="modal-content">
                   <!--Header-->
                   <div class="modal-header">
-                    <p class="heading"><span>1 </span>
-Item  </p>
+                    <p class="heading">
+                      <span>1</span>
+                      Item
+                    </p>
 
                     <button
                       type="button"
@@ -118,7 +129,7 @@ Item  </p>
                       data-dismiss="modal"
                       aria-label="Close"
                     >
-                      <span aria-hidden="true" class="white-text">× </span>
+                      <span aria-hidden="true" class="white-text">&times;</span>
                     </button>
                   </div>
 
@@ -165,7 +176,7 @@ Item  </p>
                           ></path>
                         </g>
                       </svg>
-                      <p>No products </p>
+                      <p>No Items to Show</p>
                     </div>
                     <!-- if there is items in the cart -->
                     <div class="cart-fav-items">
@@ -177,9 +188,10 @@ Item  </p>
                           <div class="item-ontent d-flex align-items-center">
                             <img src="imgs/item.jpeg" alt="item" width="40px" />
                             <div class="item-name">
-                              <h5>Coffee </h5>
+                              <h5>Coffee</h5>
                               <span class="price"
-                                >5.00 <strong>USD</strong> </span>
+                                >5.00 <strong>USD</strong>
+                              </span>
                             </div>
                           </div>
                         </div>
@@ -189,7 +201,7 @@ Item  </p>
                           data-dismiss="alert"
                           aria-label="Close"
                         >
-                          <span aria-hidden="true">× </span>
+                          <span aria-hidden="true">&times;</span>
                         </button>
                       </div>
                     </div>
@@ -202,9 +214,10 @@ Item  </p>
                           <div class="item-ontent d-flex align-items-center">
                             <img src="imgs/item.jpeg" alt="item" width="40px" />
                             <div class="item-name">
-                              <h5>Coffee </h5>
+                              <h5>Coffee</h5>
                               <span class="price"
-                                >5.00 <strong>USD</strong> </span>
+                                >5.00 <strong>USD</strong>
+                              </span>
                             </div>
                           </div>
                         </div>
@@ -214,7 +227,7 @@ Item  </p>
                           data-dismiss="alert"
                           aria-label="Close"
                         >
-                          <span aria-hidden="true">× </span>
+                          <span aria-hidden="true">&times;</span>
                         </button>
                       </div>
                     </div>
@@ -227,9 +240,10 @@ Item  </p>
                           <div class="item-ontent d-flex align-items-center">
                             <img src="imgs/item.jpeg" alt="item" width="40px" />
                             <div class="item-name">
-                              <h5>Coffee </h5>
+                              <h5>Coffee</h5>
                               <span class="price"
-                                >5.00 <strong>USD</strong> </span>
+                                >5.00 <strong>USD</strong>
+                              </span>
                             </div>
                           </div>
                         </div>
@@ -239,7 +253,7 @@ Item  </p>
                           data-dismiss="alert"
                           aria-label="Close"
                         >
-                          <span aria-hidden="true">× </span>
+                          <span aria-hidden="true">&times;</span>
                         </button>
                       </div>
                     </div>
@@ -281,9 +295,7 @@ Item  </p>
                 </svg>
               </button>
               <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                
-                
-                <a class="dropdown-item" href="index.html">Arabic</a> 
+                <a class="dropdown-item" href="index.html">Arabic</a>
               </div>
             </div>
           </div>

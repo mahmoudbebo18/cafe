@@ -18,22 +18,14 @@
   <body dir="rtl">
     <!-- Start Site NavBar -->
     <nav class="navbar navbar-expand-lg navbar-light">
+     
       <a class="navbar-brand" href="#">LOGO</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class=" navbar-collapse" id="navbarSupportedContent">
         <!-- Nav Search Form  -->
-        <form class="form-inline my-2 my-lg-0">
+        <form class="form-inline my-2 my-lg-0 main-search-form">
+          <span class="hide-form d-lg-none">
+            <i class="fas fa-arrow-right"></i>
+          </span>
           <input
             class="form-control mr-sm-2"
             type="search"
@@ -61,6 +53,13 @@
         </form>
         <!-- Nav Actions Buttons -->
         <div class="nav-actions d-flex align-items-center">
+          <div class="search-trig d-lg-none">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#c32727" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <circle cx="10" cy="10" r="7" />
+              <line x1="21" y1="21" x2="15" y2="15" />
+            </svg>
+          </div>
           <div
             class="fav-list"
             data-toggle="modal"
@@ -287,7 +286,6 @@
               </button>
               <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                 <a class="dropdown-item" href="index-en.html">الانجليزية</a>
-               
               </div>
             </div>
           </div>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -12,32 +12,24 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/style-en.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
 
-  <body dir="lre">
+  <body dir="rtl">
     <!-- Start Site NavBar -->
     <nav class="navbar navbar-expand-lg navbar-light">
+     
       <a class="navbar-brand" href="#">LOGO</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class=" navbar-collapse" id="navbarSupportedContent">
         <!-- Nav Search Form  -->
-        <form class="form-inline my-2 my-lg-0">
+        <form class="form-inline my-2 my-lg-0 main-search-form">
+          <span class="hide-form d-lg-none">
+            <i class="fas fa-arrow-right"></i>
+          </span>
           <input
             class="form-control mr-sm-2"
             type="search"
-            placeholder="Search Here"
+            placeholder="ابحث عن منتجاتك من هنا"
             aria-label="Search"
           />
           <button class="my-2 my-sm-0" type="submit">
@@ -61,6 +53,13 @@
         </form>
         <!-- Nav Actions Buttons -->
         <div class="nav-actions d-flex align-items-center">
+          <div class="search-trig d-lg-none">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#c32727" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <circle cx="10" cy="10" r="7" />
+              <line x1="21" y1="21" x2="15" y2="15" />
+            </svg>
+          </div>
           <div
             class="fav-list"
             data-toggle="modal"
@@ -86,7 +85,7 @@
             <!-- FavList Modal  -->
             <!--Modal: modalRelatedContent-->
             <div
-              class="modal fade right"
+              class="modal fade left"
               id="modalRelatedContent"
               tabindex="-1"
               role="dialog"
@@ -111,7 +110,7 @@
                   <div class="modal-header">
                     <p class="heading">
                       <span>1</span>
-                      Item
+                      عنصر
                     </p>
 
                     <button
@@ -167,7 +166,7 @@
                           ></path>
                         </g>
                       </svg>
-                      <p>There is No Items To Show Here </p>
+                      <p>لاتوجد منتجات</p>
                     </div>
                     <!-- if there is items in the cart -->
                     <div class="cart-fav-items">
@@ -179,7 +178,7 @@
                           <div class="item-ontent d-flex align-items-center">
                             <img src="imgs/item.jpeg" alt="item" width="40px" />
                             <div class="item-name">
-                              <h5>Coffee</h5>
+                              <h5>قهوة</h5>
                               <span class="price"
                                 >5.00 <strong>USD</strong>
                               </span>
@@ -205,7 +204,7 @@
                           <div class="item-ontent d-flex align-items-center">
                             <img src="imgs/item.jpeg" alt="item" width="40px" />
                             <div class="item-name">
-                              <h5>Coffee</h5>
+                              <h5>قهوة</h5>
                               <span class="price"
                                 >5.00 <strong>USD</strong>
                               </span>
@@ -231,7 +230,7 @@
                           <div class="item-ontent d-flex align-items-center">
                             <img src="imgs/item.jpeg" alt="item" width="40px" />
                             <div class="item-name">
-                              <h5>Coffee</h5>
+                              <h5>قهوة</h5>
                               <span class="price"
                                 >5.00 <strong>USD</strong>
                               </span>
@@ -286,8 +285,7 @@
                 </svg>
               </button>
               <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="category-items.html">Arabic</a>
-                
+                <a class="dropdown-item" href="crepe-en.html">الانجليزية</a>
               </div>
             </div>
           </div>
@@ -328,16 +326,16 @@
         <aside>
           <div class="side-links">
             <ul class="list-unstyled">
-              <li class="active"><a href="#">Sandwiches</a></li>
-              <li><a href="category-items.html">Salad</a></li>
-              <li><a href="category-items.html">Main Meals </a></li>
-              <li><a href="category-items.html">Waffle</a></li>
-              <li><a href="category-items.html">Crepe</a></li>
-              <li><a href="category-items.html">Desert</a></li>
-              <li><a href="category-items.html"> Cold Drinks </a></li>
-              <li><a href="category-items.html">Hot Drinks  </a></li>
-              <li><a href="category-items.html">Coktail</a></li>
-              <li><a href="category-items.html">Aragel</a></li>
+              <li ><a href="sandwich.html">سندوتشات</a></li>
+              <li><a href="salad.html">سلطات</a></li>
+              <li><a href="meals.html">وجبات رئيسية</a></li>
+              <li><a href="wuffle.html">وافل</a></li>
+              <li class="active"><a href="crepe.html">كريب</a></li>
+              <li><a href="desert.html">حلويات</a></li>
+              <li><a href="cold.html">مشروبات باردة</a></li>
+              <li><a href="hot.html">مشروبات ساخنة </a></li>
+              <li><a href="coktaile.html">كوكتيلات</a></li>
+              <li><a href="arjel.html">أراجيل</a></li>
             </ul>
           </div>
         </aside>
@@ -353,7 +351,7 @@
                     alt="Card image cap"
                   />
                   <div class="card-body">
-                    <h5 class="card-title">Salade</h5>
+                    <h5 class="card-title">سلطات</h5>
                     <div
                       class="
                         item-caption
@@ -383,7 +381,7 @@
                           <path d="M17 17h-11v-14h-2" />
                           <path d="M6 5l14 1l-1 7h-13" />
                         </svg>
-                        <span>Cart </span>
+                        <span>العربة </span>
                       </div>
                     </div>
                   </div>
@@ -397,7 +395,7 @@
                     alt="Card image cap"
                   />
                   <div class="card-body">
-                    <h5 class="card-title">Salade</h5>
+                    <h5 class="card-title">سلطات</h5>
                     <div
                       class="
                         item-caption
@@ -427,7 +425,7 @@
                           <path d="M17 17h-11v-14h-2" />
                           <path d="M6 5l14 1l-1 7h-13" />
                         </svg>
-                        <span>Cart </span>
+                        <span>العربة </span>
                       </div>
                     </div>
                   </div>
@@ -441,7 +439,7 @@
                     alt="Card image cap"
                   />
                   <div class="card-body">
-                    <h5 class="card-title">Salade</h5>
+                    <h5 class="card-title">سلطات</h5>
                     <div
                       class="
                         item-caption
@@ -471,7 +469,7 @@
                           <path d="M17 17h-11v-14h-2" />
                           <path d="M6 5l14 1l-1 7h-13" />
                         </svg>
-                        <span>Cart </span>
+                        <span>العربة </span>
                       </div>
                     </div>
                   </div>
@@ -485,7 +483,7 @@
                     alt="Card image cap"
                   />
                   <div class="card-body">
-                    <h5 class="card-title">Salade</h5>
+                    <h5 class="card-title">سلطات</h5>
                     <div
                       class="
                         item-caption
@@ -515,7 +513,7 @@
                           <path d="M17 17h-11v-14h-2" />
                           <path d="M6 5l14 1l-1 7h-13" />
                         </svg>
-                        <span>Cart </span>
+                        <span>العربة </span>
                       </div>
                     </div>
                   </div>
@@ -529,7 +527,7 @@
                     alt="Card image cap"
                   />
                   <div class="card-body">
-                    <h5 class="card-title">Salade</h5>
+                    <h5 class="card-title">سلطات</h5>
                     <div
                       class="
                         item-caption
@@ -559,7 +557,7 @@
                           <path d="M17 17h-11v-14h-2" />
                           <path d="M6 5l14 1l-1 7h-13" />
                         </svg>
-                        <span>Cart </span>
+                        <span>العربة </span>
                       </div>
                     </div>
                   </div>
@@ -573,7 +571,7 @@
                     alt="Card image cap"
                   />
                   <div class="card-body">
-                    <h5 class="card-title">Salade</h5>
+                    <h5 class="card-title">سلطات</h5>
                     <div
                       class="
                         item-caption
@@ -603,7 +601,7 @@
                           <path d="M17 17h-11v-14h-2" />
                           <path d="M6 5l14 1l-1 7h-13" />
                         </svg>
-                        <span>Cart </span>
+                        <span>العربة </span>
                       </div>
                     </div>
                   </div>
@@ -617,7 +615,7 @@
                     alt="Card image cap"
                   />
                   <div class="card-body">
-                    <h5 class="card-title">Salade</h5>
+                    <h5 class="card-title">سلطات</h5>
                     <div
                       class="
                         item-caption
@@ -647,7 +645,7 @@
                           <path d="M17 17h-11v-14h-2" />
                           <path d="M6 5l14 1l-1 7h-13" />
                         </svg>
-                        <span>Cart </span>
+                        <span>العربة </span>
                       </div>
                     </div>
                   </div>
@@ -661,7 +659,7 @@
                     alt="Card image cap"
                   />
                   <div class="card-body">
-                    <h5 class="card-title">Salade</h5>
+                    <h5 class="card-title">سلطات</h5>
                     <div
                       class="
                         item-caption
@@ -691,7 +689,7 @@
                           <path d="M17 17h-11v-14h-2" />
                           <path d="M6 5l14 1l-1 7h-13" />
                         </svg>
-                        <span>Cart </span>
+                        <span>العربة </span>
                       </div>
                     </div>
                   </div>
@@ -705,7 +703,7 @@
                     alt="Card image cap"
                   />
                   <div class="card-body">
-                    <h5 class="card-title">Salade</h5>
+                    <h5 class="card-title">سلطات</h5>
                     <div
                       class="
                         item-caption
@@ -735,7 +733,7 @@
                           <path d="M17 17h-11v-14h-2" />
                           <path d="M6 5l14 1l-1 7h-13" />
                         </svg>
-                        <span>Cart </span>
+                        <span>العربة </span>
                       </div>
                     </div>
                   </div>
@@ -749,7 +747,7 @@
                     alt="Card image cap"
                   />
                   <div class="card-body">
-                    <h5 class="card-title">Salade</h5>
+                    <h5 class="card-title">سلطات</h5>
                     <div
                       class="
                         item-caption
@@ -779,7 +777,7 @@
                           <path d="M17 17h-11v-14h-2" />
                           <path d="M6 5l14 1l-1 7h-13" />
                         </svg>
-                        <span>Cart </span>
+                        <span>العربة </span>
                       </div>
                     </div>
                   </div>
@@ -821,7 +819,7 @@
     <!-- cart modal  -->
 
     <div
-      class="modal fade right"
+      class="modal fade left"
       id="cartModal"
       tabindex="-1"
       role="dialog"
@@ -861,7 +859,7 @@
                 <circle cx="12" cy="15" r="2" />
               </svg>
               <span>1</span>
-              Item
+              عنصر
             </p>
 
             <button
@@ -917,7 +915,7 @@
                   ></path>
                 </g>
               </svg>
-              <p>There is No Items To Show Here </p>
+              <p>لاتوجد منتجات</p>
             </div>
             <!-- if there is items in the cart -->
             <div class="cart-fav-items">
@@ -939,7 +937,7 @@
                     </div>
                     <img src="imgs/item.jpeg" alt="item" width="40px" />
                     <div class="item-name">
-                      <h5>Coffee</h5>
+                      <h5>قهوة</h5>
                       <span class="price">5.00 <strong>USD</strong> </span>
                     </div>
                   </div>
@@ -956,7 +954,7 @@
             </div>
           </div>
           <div class="go-to-pay">
-            <button class="btn btn-primary my-pay-modal">Order Now </button>
+            <button class="btn btn-primary my-pay-modal">الطلب</button>
           </div>
         </div>
         <!--/.Content-->
@@ -1004,8 +1002,8 @@
                       </svg>
                     </div>
                     <div class="step-content">
-                      <h5>Personal Info</h5>
-                      <span>Profile </span>
+                      <h5>بياناتك</h5>
+                      <span>الملف الشخصي</span>
                     </div>
                   </a>
                   <a
@@ -1037,8 +1035,8 @@
                       </svg>
                     </div>
                     <div class="step-content">
-                      <h5>Address</h5>
-                      <span>Deliver Order </span>
+                      <h5>العنون</h5>
+                      <span>تسليم الطلب </span>
                     </div>
                   </a>
                   <a
@@ -1071,8 +1069,8 @@
                       </svg>
                     </div>
                     <div class="step-content">
-                      <h5>Payment</h5>
-                      <span>Order Details  </span>
+                      <h5>الدفع</h5>
+                      <span>تفاصيل الطلب </span>
                     </div>
                   </a>
                 </div>
@@ -1087,14 +1085,14 @@
                 >
                   <form action="">
                     <div class="form-group">
-                      <label class="font-weight-bold" for="">Name </label>
+                      <label class="font-weight-bold" for="">الاسم </label>
                       <input type="text" class="form-control" required />
                     </div>
                     <div class="form-group">
-                      <label class="font-weight-bold" for="">Mobile </label>
+                      <label class="font-weight-bold" for="">الموبايل </label>
                       <input type="number" class="form-control" required />
                     </div>
-                    <button class="btn btn-primary m-0 w-100">Next</button>
+                    <button class="btn btn-primary m-0 w-100">التالي</button>
                   </form>
                 </div>
 
@@ -1107,22 +1105,22 @@
                 >
                   <form action="">
                     <div class="form-group">
-                      <label class="font-weight-bold" for="">Area </label>
+                      <label class="font-weight-bold" for="">المنطقة </label>
                       <input type="text" class="form-control" required />
                     </div>
                     <div class="form-group">
-                      <label class="font-weight-bold" for="">Building </label>
+                      <label class="font-weight-bold" for="">البناء </label>
                       <input type="text" class="form-control" required />
                     </div>
                     <div class="form-group">
-                      <label class="font-weight-bold" for="">Floor </label>
+                      <label class="font-weight-bold" for="">الطابق </label>
                       <input type="text" class="form-control" required />
                     </div>
                     <div class="form-group">
-                      <label class="font-weight-bold" for="">Flat No   </label>
+                      <label class="font-weight-bold" for="">رقم الشقة </label>
                       <input type="text" class="form-control" required />
                     </div>
-                    <button class="btn btn-primary m-0 w-100">Next</button>
+                    <button class="btn btn-primary m-0 w-100">التالي</button>
                   </form>
                 </div>
 
@@ -1133,7 +1131,7 @@
                   role="tabpanel"
                   aria-labelledby="nav-payment-tab"
                 >
-                  <h4 class="mb-4">Order Details  :</h4>
+                  <h4 class="mb-4">تفاصيل الطلب :</h4>
                   <div class="orders-holder mb-5">
                     <div class="order-details d-flex">
                       <img
@@ -1152,7 +1150,7 @@
                         "
                       >
                         <div>
-                          <h5 class="font-weight-bold">Order Name </h5>
+                          <h5 class="font-weight-bold">اسم الاوردر</h5>
                           <p><span>1</span> * <span>13.00</span></p>
                         </div>
                         <span class="total-price"> 13.00 </span>
@@ -1161,14 +1159,14 @@
                   </div>
                   <form action="">
                     <div class="form-group">
-                      <label class="font-weight-bold" for="">Notes </label>
+                      <label class="font-weight-bold" for="">ملاحظاتك </label>
                       <textarea
                         name="notes"
                         id="msg"
                         rows="5"
                         class="form-control mb-3 w-100"
                       ></textarea>
-                      <button class="btn btn-primary w-100 m-0">Send</button>
+                      <button class="btn btn-primary w-100 m-0">ارسال</button>
                     </div>
                   </form>
                 </div>
@@ -1183,7 +1181,7 @@
     <footer>
       <div class="container">
         <div class="foot-content d-flex justify-content-between">
-          <p> All Copyrights Reserved &copy;</p>
+          <p>جميع الحقوق محفوظة &copy;</p>
           <div class="social">
             <a href="#">
               <svg
