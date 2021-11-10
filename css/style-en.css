@@ -139,10 +139,14 @@ body {
   right: 0 !important;
   left: auto !important;
   bottom: 0 !important;
-  top: 53px !important;
-  width: 320px !important;
-  height: 100vh;
-  background-color: #fff; }
+  top: auto !important;
+  width: 100% !important;
+  height: 300px;
+  margin-inline-start: auto;
+  background-color: #fff;
+  max-width: 100%;
+  position: fixed !important;
+  margin: 0 !important; }
   .fav-modal .modal-content {
     height: 100%; }
     .fav-modal .modal-content .modal-header {
@@ -155,8 +159,27 @@ body {
       .fav-modal .modal-content .modal-header .close {
         margin: 0;
         padding: 0; }
+        @media (max-width: 767px) {
+          .fav-modal .modal-content .modal-header .close {
+            position: absolute;
+            top: -36px;
+            right: 49%;
+            background-color: #c32727;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center; } }
         .fav-modal .modal-content .modal-header .close span {
           color: #c32727 !important; }
+          @media (max-width: 767px) {
+            .fav-modal .modal-content .modal-header .close span {
+              font-weight: normal;
+              color: #fff !important;
+              display: block;
+              margin-top: -4px; } }
     .fav-modal .modal-content .modal-body {
       padding: 10px;
       height: 450px;
@@ -191,16 +214,23 @@ body {
           color: #0d1136;
           font-size: 16px; }
     .fav-modal .modal-content .go-to-pay {
-      position: absolute;
+      position: static;
       bottom: 65px;
       width: 100%;
-      text-align: center; }
+      text-align: center;
+      box-shadow: 0 0 5px #ccc;
+      background-color: #f5f5f5;
+      padding: 12px; }
       .fav-modal .modal-content .go-to-pay button {
-        width: 90%; }
+        width: 70%;
+        background-color: #c32727 !important;
+        border-color: #c32727 !important; }
 
 /*categories*/
 .categories {
   padding: 120px 0 50px; }
+  .categories img {
+    cursor: pointer; }
   .categories .card {
     margin-bottom: 24px; }
     .categories .card .card-body {

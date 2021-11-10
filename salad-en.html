@@ -71,199 +71,30 @@
             </svg>
           </div>
           <div
-            class="fav-list"
-            data-toggle="modal"
-            data-target="#modalRelatedContent"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="icon icon-tabler icon-tabler-heart"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="#c32727"
-              fill="none"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-              <path
-                d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572"
-              />
-            </svg>
-            <!-- FavList Modal  -->
-            <!--Modal: modalRelatedContent-->
-            <div
-              class="modal fade left"
-              id="modalRelatedContent"
-              tabindex="-1"
-              role="dialog"
-              aria-labelledby="myModalLabel"
-              aria-hidden="true"
-              data-backdrop="false"
-            >
-              <div
-                class="
-                  fav-modal
-                  modal-dialog
-                  modal-side
-                  modal-bottom-left
-                  modal-notify
-                  modal-info
-                "
-                role="document"
-              >
-                <!--Content-->
-                <div class="modal-content">
-                  <!--Header-->
-                  <div class="modal-header">
-                    <p class="heading">
-                      <span>1</span>
-                      Item
-                    </p>
-
-                    <button
-                      type="button"
-                      class="close"
-                      data-dismiss="modal"
-                      aria-label="Close"
-                    >
-                      <span aria-hidden="true" class="white-text">&times;</span>
-                    </button>
-                  </div>
-
-                  <!--Body-->
-                  <div class="modal-body">
-                    <!-- if there is no items in the cart  -->
-                    <div
-                      class="
-                        no-items
-                        d-flex
-                        justify-content-center
-                        align-items-center
-                        flex-column
-                      "
-                    >
-                      <svg
-                        width="200px"
-                        version="1.1"
-                        id="Capa_1"
-                        xmlns="http://www.w3.org/2000/svg"
-                        x="0px"
-                        y="0px"
-                        viewBox="0 0 512 512"
-                        enable-background="0 0 512 512"
-                      >
-                        <g>
-                          <path
-                            d="M155.5,301.9c82.2,0,149-66.8,149-149s-66.8-149-149-149s-149,66.8-149,149S73.4,301.9,155.5,301.9z M155.5,19.4 c73.6,0,133.4,59.9,133.4,133.4s-59.9,133.4-133.4,133.4S22.1,226.4,22.1,152.9S82,19.4,155.5,19.4z"
-                          ></path>
-                          <path
-                            d="M316.8,36.8h9.4v9.4c0,4.3,3.5,7.8,7.8,7.8s7.8-3.5,7.8-7.8v-9.4h9.4c4.3,0,7.8-3.5,7.8-7.8s-3.5-7.8-7.8-7.8h-9.4v-9.4 c0-4.3-3.5-7.8-7.8-7.8s-7.8,3.5-7.8,7.8v9.4h-9.4c-4.3,0-7.8,3.5-7.8,7.8S312.5,36.8,316.8,36.8z"
-                          ></path>
-                          <path
-                            d="M354.8,114.6c0,4.3,3.5,7.8,7.8,7.8h9.4v9.4c0,4.3,3.5,7.8,7.8,7.8s7.8-3.5,7.8-7.8v-9.4h9.4c4.3,0,7.8-3.5,7.8-7.8 c0-4.3-3.5-7.8-7.8-7.8h-9.4v-9.4c0-4.3-3.5-7.8-7.8-7.8s-7.8,3.5-7.8,7.8v9.4h-9.4C358.3,106.8,354.8,110.3,354.8,114.6z"
-                          ></path>
-                          <path
-                            d="M76.9,355.8h-9.4v-9.4c0-4.3-3.5-7.8-7.8-7.8s-7.8,3.5-7.8,7.8v9.4h-9.4c-4.3,0-7.8,3.5-7.8,7.8c0,4.3,3.5,7.8,7.8,7.8H52 v9.4c0,4.3,3.5,7.8,7.8,7.8s7.8-3.5,7.8-7.8v-9.4h9.4c4.3,0,7.8-3.5,7.8-7.8C84.7,359.3,81.3,355.8,76.9,355.8z"
-                          ></path>
-                          <path
-                            d="M492.1,161.1h-51.9c-7.3,0-13.3,6-13.3,13.3v2.9H391l-7.2,27.4h-72.6c-4.3,0-7.8,3.5-7.8,7.8s3.5,7.8,7.8,7.8H388 c5.5,0,9.9,4.5,9.9,9.9s-4.5,9.9-9.9,9.9H287.9c-4.3,0-7.8,3.5-7.8,7.8s3.5,7.8,7.8,7.8h14.2l-9.6,61.4h-89.7l-0.8-4.7 c-0.7-4.2-4.8-7.1-9-6.3c-4.2,0.7-7.1,4.8-6.3,9l0.4,2.1h-51.7l-0.6-3c-0.9-4.2-5.1-6.9-9.3-6c-4.2,0.9-6.9,5.1-6,9.3l2,9 c0,0,0,0,0,0l18.2,84.2h70.3c0,0,0,0,0,0c0,0,0,0,0,0h71.5c1.1,1.1,2.5,1.8,4.2,2.1c0.4,0.1,0.8,0.1,1.2,0.1c2,0,3.9-0.8,5.3-2.2 h47l-3.4,16.7H145.8c-4.3,0-7.8,3.5-7.8,7.8s3.5,7.8,7.8,7.8h23.7c-10.6,6-17.7,17.3-17.7,30.3c0,19.2,15.6,34.8,34.8,34.8 c19.2,0,34.8-15.6,34.8-34.8c0-13-7.2-24.3-17.7-30.3h90.3c-10.6,6-17.7,17.3-17.7,30.3c0,19.2,15.6,34.8,34.8,34.8 s34.8-15.6,34.8-34.8c0-13-7.2-24.3-17.7-30.3h20.3l37.7-187.3h1.8c14.1,0,25.5-11.4,25.5-25.5c0-10-5.9-18.7-14.3-22.9l3.8-14.4 h23.9v3.1c0,7.3,6,13.3,13.3,13.3h51.9c7.3,0,13.3-6,13.3-13.3v-21.5C505.5,167.1,499.5,161.1,492.1,161.1z M186.6,492.6 c-10.6,0-19.2-8.6-19.2-19.2s8.6-19.2,19.2-19.2c10.6,0,19.2,8.6,19.2,19.2S197.2,492.6,186.6,492.6z M311.2,492.6 c-10.6,0-19.2-8.6-19.2-19.2s8.6-19.2,19.2-19.2c10.6,0,19.2,8.6,19.2,19.2S321.8,492.6,311.2,492.6z M290.1,332.8l-9.7,62.4h-64 l-10.9-62.4H290.1z M138.6,332.8h51.1l10.9,62.4h-48.5L138.6,332.8z M296.2,395.2l9.7-62.4h48.9l-12.6,62.4H296.2z M358,317.2 h-49.6l9.6-61.4h52.5L358,317.2z M489.9,193.7h-47.4v-17h47.4V193.7z"
-                          ></path>
-                          <path
-                            d="M149.4,253.3c1.4,1.2,3.2,1.9,5.1,1.9c0.1,0,0.1,0,0.2,0c0.1,0,0.1,0,0.2,0c1.9,0,3.7-0.7,5.1-1.9 c61.7-32.8,87.2-68.5,97.8-92.9c6.3-14.5,6.6-31.2,0.7-45.9c-5.7-14.1-16.4-25.1-30.2-31c-7.3-3.1-14.9-4.6-22.9-4.6 c-21.6,0-40.5,11.7-50.8,29.2C144.5,90.7,125.6,79,103.9,79c-7.9,0-15.6,1.6-22.9,4.6c-13.8,5.8-24.5,16.8-30.2,31 c-5.9,14.6-5.6,31.3,0.7,45.9C62.1,184.8,87.7,220.6,149.4,253.3z M65.4,120.4c4.1-10.3,11.8-18.2,21.8-22.4 c5.3-2.2,11-3.4,16.8-3.4c22.3,0,40.6,16.9,42.9,38.6c-0.1,1.5-0.2,3.1-0.2,4.6c0,4.3,3.5,7.8,7.8,7.8c0.1,0,0.1,0,0.2,0 c0.1,0,0.1,0,0.2,0c4.3,0,7.8-3.5,7.8-7.8c0-1.6-0.1-3.1-0.2-4.6c2.3-21.7,20.7-38.6,42.9-38.6c5.8,0,11.5,1.1,16.8,3.4 c9.9,4.2,17.7,12.2,21.8,22.4c4.3,10.8,4.1,23.1-0.5,33.9c-17.6,40.6-61.6,69.5-88.8,84.3c-27.2-14.7-71.2-43.7-88.8-84.3 C61.2,143.5,61,131.2,65.4,120.4z"
-                          ></path>
-                        </g>
-                      </svg>
-                      <p>No Items to Show</p>
-                    </div>
-                    <!-- if there is items in the cart -->
-                    <div class="cart-fav-items">
-                      <div
-                        class="alert alert-dismissible fade show"
-                        role="alert"
-                      >
-                        <div class="item d-flex align-items-center">
-                          <div class="item-ontent d-flex align-items-center">
-                            <img src="imgs/item.jpeg" alt="item" width="40px" />
-                            <div class="item-name">
-                              <h5>Coffee</h5>
-                              <span class="price"
-                                >5.00 <strong>USD</strong>
-                              </span>
-                            </div>
-                          </div>
-                        </div>
-                        <button
-                          type="button"
-                          class="close"
-                          data-dismiss="alert"
-                          aria-label="Close"
-                        >
-                          <span aria-hidden="true">&times;</span>
-                        </button>
-                      </div>
-                    </div>
-                    <div class="cart-fav-items">
-                      <div
-                        class="alert alert-dismissible fade show"
-                        role="alert"
-                      >
-                        <div class="item d-flex align-items-center">
-                          <div class="item-ontent d-flex align-items-center">
-                            <img src="imgs/item.jpeg" alt="item" width="40px" />
-                            <div class="item-name">
-                              <h5>Coffee</h5>
-                              <span class="price"
-                                >5.00 <strong>USD</strong>
-                              </span>
-                            </div>
-                          </div>
-                        </div>
-                        <button
-                          type="button"
-                          class="close"
-                          data-dismiss="alert"
-                          aria-label="Close"
-                        >
-                          <span aria-hidden="true">&times;</span>
-                        </button>
-                      </div>
-                    </div>
-                    <div class="cart-fav-items">
-                      <div
-                        class="alert alert-dismissible fade show"
-                        role="alert"
-                      >
-                        <div class="item d-flex align-items-center">
-                          <div class="item-ontent d-flex align-items-center">
-                            <img src="imgs/item.jpeg" alt="item" width="40px" />
-                            <div class="item-name">
-                              <h5>Coffee</h5>
-                              <span class="price"
-                                >5.00 <strong>USD</strong>
-                              </span>
-                            </div>
-                          </div>
-                        </div>
-                        <button
-                          type="button"
-                          class="close"
-                          data-dismiss="alert"
-                          aria-label="Close"
-                        >
-                          <span aria-hidden="true">&times;</span>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!--/.Content-->
-              </div>
-            </div>
-            <!--Modal: modalRelatedContent-->
-          </div>
+          class="fav-list"
+          data-toggle="modal"
+          data-target="#modalRelatedContent"
+        >
+         <a href="wishlist-en.html">
+          <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon icon-tabler icon-tabler-heart"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="#c32727"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path
+            d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572"
+          />
+        </svg>
+         </a>
+        </div>
           <div class="lang-switch">
             <div class="dropdown">
               <button
@@ -336,8 +167,8 @@
         <aside>
           <div class="side-links">
             <ul class="list-unstyled">
-              <li class="active"><a href="sandwich-en.html">Sandwiches</a></li>
-              <li><a href="salad-en.html">Salad</a></li>
+              <li><a href="sandwich-en.html">Sandwiches</a></li>
+              <li  class="active"><a href="salad-en.html">Salad</a></li>
               <li><a href="meals-en.html">Meals </a></li>
               <li><a href="wuffle-en.html">Wuffle</a></li>
               <li><a href="crepe-en.html">Crepe</a></li>
