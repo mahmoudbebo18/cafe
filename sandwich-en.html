@@ -71,30 +71,30 @@
             </svg>
           </div>
           <div
-          class="fav-list"
-          data-toggle="modal"
-          data-target="#modalRelatedContent"
-        >
-         <a href="wishlist-en.html">
-          <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="icon icon-tabler icon-tabler-heart"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="#c32727"
-          fill="none"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        >
-          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-          <path
-            d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572"
-          />
-        </svg>
-         </a>
-        </div>
+            class="fav-list"
+            data-toggle="modal"
+            data-target="#modalRelatedContent"
+          >
+            <a href="wishlist-en.html">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-heart"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#c32727"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572"
+                />
+              </svg>
+            </a>
+          </div>
           <div class="lang-switch">
             <div class="dropdown">
               <button
@@ -305,7 +305,7 @@
                                         class="add-to-cart btn btn-danger"
                                         type="button"
                                       >
-                                       Add To Cart
+                                        Add To Cart
                                       </button>
                                       <button
                                         class="like btn btn-danger"
@@ -514,7 +514,7 @@
                                         class="add-to-cart btn btn-danger"
                                         type="button"
                                       >
-                                       Add To Cart
+                                        Add To Cart
                                       </button>
                                       <button
                                         class="like btn btn-danger"
@@ -723,7 +723,7 @@
                                         class="add-to-cart btn btn-danger"
                                         type="button"
                                       >
-                                       Add To Cart
+                                        Add To Cart
                                       </button>
                                       <button
                                         class="like btn btn-danger"
@@ -932,7 +932,7 @@
                                         class="add-to-cart btn btn-danger"
                                         type="button"
                                       >
-                                       Add To Cart
+                                        Add To Cart
                                       </button>
                                       <button
                                         class="like btn btn-danger"
@@ -1141,7 +1141,7 @@
                                         class="add-to-cart btn btn-danger"
                                         type="button"
                                       >
-                                       Add To Cart
+                                        Add To Cart
                                       </button>
                                       <button
                                         class="like btn btn-danger"
@@ -1350,7 +1350,7 @@
                                         class="add-to-cart btn btn-danger"
                                         type="button"
                                       >
-                                       Add To Cart
+                                        Add To Cart
                                       </button>
                                       <button
                                         class="like btn btn-danger"
@@ -1691,7 +1691,7 @@
                     </div>
                     <div class="step-content">
                       <h5>Address</h5>
-                      <span>Deliver Order  </span>
+                      <span>Deliver Order </span>
                     </div>
                   </a>
                   <a
@@ -1725,7 +1725,7 @@
                     </div>
                     <div class="step-content">
                       <h5>Payment</h5>
-                      <span>Order Details  </span>
+                      <span>Order Details </span>
                     </div>
                   </a>
                 </div>
@@ -1772,7 +1772,9 @@
                       <input type="text" class="form-control" required />
                     </div>
                     <div class="form-group">
-                      <label class="font-weight-bold" for=""> Flat Number </label>
+                      <label class="font-weight-bold" for="">
+                        Flat Number
+                      </label>
                       <input type="text" class="form-control" required />
                     </div>
                     <button class="btn btn-primary m-0 w-100">Next</button>
@@ -1786,7 +1788,7 @@
                   role="tabpanel"
                   aria-labelledby="nav-payment-tab"
                 >
-                  <h4 class="mb-4">Order Details  :</h4>
+                  <h4 class="mb-4">Order Details :</h4>
                   <div class="orders-holder mb-5">
                     <div class="order-details d-flex">
                       <img
@@ -1805,7 +1807,7 @@
                         "
                       >
                         <div>
-                          <h5 class="font-weight-bold">Order Name </h5>
+                          <h5 class="font-weight-bold">Order Name</h5>
                           <p><span>1</span> * <span>13.00</span></p>
                         </div>
                         <span class="total-price"> 13.00 </span>
@@ -1900,14 +1902,31 @@
       </div>
     </footer>
 
+    <!-- Success alert  -->
+    <div class="alert alert-success" id="success-alert">
+      <button type="button" class="close" data-dismiss="alert">x</button>
+      <strong>Success!</strong>
+      Product have added to your wishlist.
+    </div>
+
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.toaster.js"></script>
     <!-- MDB core JavaScript -->
     <script
       type="text/javascript"
       src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"
     ></script>
     <script src="js/main.js"></script>
+    <script>
+      $(".add-to-card.d-flex").click(function () {
+        $.toaster({
+          priority: "success",
+          title: "Done",
+          message: "Item Added Successfully",
+        });
+      });
+    </script>
   </body>
 </html>

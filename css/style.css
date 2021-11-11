@@ -49,7 +49,7 @@ body {
           z-index: 22;
           display: flex;
           flex-wrap: nowrap;
-          top: -100%;
+          top: -105%;
           margin: 0 !important; } }
       .navbar #navbarSupportedContent form input {
         width: 100%;
@@ -72,7 +72,8 @@ body {
         border: none;
         right: 14px;
         padding: 0;
-        top: 10px; }
+        top: 10px;
+        margin: 0 !important; }
         @media (max-width: 991px) {
           .navbar #navbarSupportedContent form button {
             height: 38px;
@@ -227,16 +228,33 @@ body {
 /*categories*/
 .categories {
   padding: 120px 0 50px; }
+  @media (max-width: 574px) {
+    .categories .col-lg-3 {
+      width: 50% !important;
+      padding-right: 8px;
+      padding-left: 8px; } }
   .categories .card {
     margin-bottom: 24px; }
     .categories .card img {
       cursor: pointer; }
     .categories .card .card-body {
       padding: 16px; }
+      @media (max-width: 574px) {
+        .categories .card .card-body {
+          padding: 8px; } }
       .categories .card .card-body h5 {
         margin: 0;
         color: #0d1136;
         font-weight: 600; }
+    @media (max-width: 574px) {
+      .categories .card {
+        margin-bottom: 16px; }
+        .categories .card h5 {
+          font-weight: bold !important;
+          font-size: 13px !important; }
+        .categories .card .item-caption .item-price {
+          font-size: 12px !important;
+          font-weight: bold !important; } }
 
 /*footer */
 footer {
@@ -333,12 +351,19 @@ footer {
     border: 1px solid #ddd;
     border-radius: 20px;
     padding: 6px 16px;
-    color: #c32727; }
+    color: #c32727;
+    cursor: pointer; }
     .categories-items .item-caption .add-to-card svg {
       margin-inline-end: 5px; }
+    @media (max-width: 574px) {
+      .categories-items .item-caption .add-to-card {
+        padding: 2px 7px; } }
   @media (max-width: 991px) {
     .categories-items {
       width: 100%; } }
+  @media (max-width: 574px) {
+    .categories-items {
+      padding-top: 50px; } }
   .categories-items .modal-dialog {
     max-width: 90%;
     margin: auto;

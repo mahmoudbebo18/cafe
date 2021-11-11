@@ -1921,11 +1921,22 @@
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.toaster.js"></script>
+
     <!-- MDB core JavaScript -->
     <script
       type="text/javascript"
       src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"
     ></script>
     <script src="js/main.js"></script>
+    <script>
+      $(".add-to-card.d-flex").click(function () {
+        $.toaster({
+          priority: "success",
+          title: "نجح",
+          message: "تم اضافة العنصر الى العربة",
+        });
+      });
+    </script>
   </body>
 </html>
