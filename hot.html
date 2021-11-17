@@ -7,11 +7,13 @@
     <title>مشروبات  ساخنة </title>
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/fontawesome-all.min.css" />
+
     <!-- Material Design Bootstrap -->
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css"
       rel="stylesheet"
-    />
+/>
+    
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
@@ -1521,7 +1523,8 @@
             </div>
           </div>
           <div class="go-to-pay">
-            <button class="btn btn-primary my-pay-modal">الطلب</button>
+            <button data-dismiss="modal"
+            aria-label="Close" class="btn btn-primary my-pay-modal">الطلب</button>
           </div>
         </div>
         <!--/.Content-->
@@ -1650,14 +1653,14 @@
                   role="tabpanel"
                   aria-labelledby="nav-info-tab"
                 >
-                  <form action="">
+                  <form>
                     <div class="form-group">
-                      <label class="font-weight-bold" for="">الاسم </label>
-                      <input type="text" class="form-control" required />
+                      <span class="font-weight-bold">الاسم </span>
+                      <input type="text" class="form-control" />
                     </div>
                     <div class="form-group">
-                      <label class="font-weight-bold" for="">الموبايل </label>
-                      <input type="number" class="form-control" required />
+                      <span class="font-weight-bold">الموبايل </span>
+                      <input type="number" class="form-control" />
                     </div>
                     <button class="btn btn-primary m-0 w-100">التالي</button>
                   </form>
@@ -1670,22 +1673,22 @@
                   role="tabpanel"
                   aria-labelledby="nav-address-tab"
                 >
-                  <form action="">
+                  <form>
                     <div class="form-group">
-                      <label class="font-weight-bold" for="">المنطقة </label>
-                      <input type="text" class="form-control" required />
+                      <span class="font-weight-bold">المنطقة </span>
+                      <input type="text" class="form-control" />
                     </div>
                     <div class="form-group">
-                      <label class="font-weight-bold" for="">البناء </label>
-                      <input type="text" class="form-control" required />
+                      <span class="font-weight-bold">البناء </span>
+                      <input type="text" class="form-control" />
                     </div>
                     <div class="form-group">
-                      <label class="font-weight-bold" for="">الطابق </label>
-                      <input type="text" class="form-control" required />
+                      <span class="font-weight-bold">الطابق </span>
+                      <input type="text" class="form-control" />
                     </div>
                     <div class="form-group">
-                      <label class="font-weight-bold" for="">رقم الشقة </label>
-                      <input type="text" class="form-control" required />
+                      <span class="font-weight-bold">رقم الشقة </span>
+                      <input type="text" class="form-control" />
                     </div>
                     <button class="btn btn-primary m-0 w-100">التالي</button>
                   </form>
@@ -1726,7 +1729,7 @@
                   </div>
                   <form action="">
                     <div class="form-group">
-                      <label class="font-weight-bold" for="">ملاحظاتك </label>
+                      <label class="font-weight-bold">ملاحظاتك </label>
                       <textarea
                         name="notes"
                         id="msg"
